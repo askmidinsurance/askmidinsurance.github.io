@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://askmidinsurance.org/sitemap.xml
-Host: askmidinsurance.org
