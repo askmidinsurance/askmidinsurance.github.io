@@ -39,6 +39,54 @@
 <meta property="og:image" content="https://askmidinsurance.org/favicon.png">
 <meta property="og:description" content="Check your vehicle insurance status instantly with AskMid Insurance. A quick and reliable tool for UK drivers.">
 <meta property="og:site_name" content="AskMid Insurance">
+
+
+	<style> 
+/* Parent menu item */
+.nav-item.has-submenu {
+  position: relative;
+}
+
+/* Submenu hidden by default */
+.nav-item .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #196e40; /* green background to match header */
+  min-width: 220px;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 9999;
+}
+
+/* Show submenu on hover */
+.nav-item.has-submenu:hover > .sub-menu {
+  display: block;
+}
+
+/* Submenu links */
+.sub-menu li {
+  padding: 0;
+}
+
+.sub-menu .sub-link {
+  display: block;
+  padding: 10px 16px;
+  color: #ffffff; /* white text */
+  text-decoration: none;
+  font: 16px arial, helvetica, sans-serif;
+}
+
+/* Hover effect */
+.sub-menu .sub-link:hover {
+  background: #145c34;
+  color: #ffffff;
+}
+    
+</style>
     
     
     <script type="application/ld+json">
@@ -248,31 +296,72 @@
     </head>
     
     <body class="askMID"> 
-    <header class="header-outer" role="banner"> 
-    <div class="header-inner"> 
-    <div class="header-brand"> 
-    <a href="/" class="site-title-link" aria-label="Return to homepage"> 
-    <span class="site-title">askMID Insurance</span> 
-    </a> 
-    </div> 
-    <nav class="main-nav" aria-label="Main navigation"> 
-    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="main-menu"> 
-    <span class="menu-icon"> <span class="menu-line"></span> 
-    </span> 
-    </button> 
-    <ul id="main-menu" class="nav-menu"> 
-    <li class="nav-item"> 
-    <a href="/" class="nav-link" aria-label="Visit Home"> Home </a> 
-    </li>
-    <li class="nav-item"> 
-    <a href="/check-insurance/" class="nav-link" aria-label="Check Insurance"> Check Insurance </a> 
-    </li>
-    <li class="nav-item"> 
-    <a href="/askMID-login/" class="nav-link" aria-label="askMID Login "> askMID Login </a> </li>
-    <li class="nav-item"> 
-    <a href="/dvla-vehicle-check/" class="nav-link" aria-label="DVLA Check">DVLA Check</a>  
-    </li> 
-    </ul> 
+    <!-- Header -->
+  <header class="header-outer" role="banner">
+  <div class="header-inner">
+
+    <div class="header-brand">
+      <a href="/" class="site-title-link" aria-label="Return to homepage">
+        <span class="site-title">askMID Insurance</span>
+      </a>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="mobile-menu-toggle"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+        aria-controls="main-menu">
+        <span class="menu-icon">
+          <span class="menu-line"></span>
+        </span>
+      </button>
+
+      <ul id="main-menu" class="nav-menu">
+
+        <li class="nav-item">
+          <a href="/" class="nav-link" aria-label="Visit Home">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/about-us" class="nav-link" aria-label="about us">About</a>
+        </li>
+
+        <!-- Check Insurance with Sub Menu -->
+        <li class="nav-item has-submenu">
+          <a href="/check-insurance"
+             class="nav-link"
+             aria-haspopup="true"
+             aria-expanded="false">
+            Check Insurance
+          </a>
+
+          <ul class="sub-menu" aria-label="Check Insurance Submenu">
+            <li>
+              <a href="/askMID-login" class="sub-link">
+                askMID Login
+              </a>
+            </li>
+            <li>
+              <a href="/askMID-register" class="sub-link">
+                askMID Register
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="/privacy-policy" class="nav-link" aria-label="Privacy Policy">
+            Privacy Policy
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/disclaimer" class="nav-link" aria-label="Disclaimer">
+            Disclaimer
+          </a>
+        </li>
+
+      </ul>
     </nav> 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -287,7 +376,7 @@
     });
     </script>
     <a href="#main-content" class="skip-to-content">Skip to main content</a> </div> 
-    </header> 
+    </header>
     <main class="site-content" role="main" id="main-content" aria-label="Homepage content"> 
     <article class="article" aria-labelledby="article-title"> 
     <header> 
@@ -878,7 +967,7 @@
 
 </article> </main> 
 
-<footer class="footer-outer" role="contentinfo"> <div class="footer-inner"> <div class="footer-widget"> <section class="about-us" aria-labelledby="about-us-heading"> <h2 id="about-us-heading" class="footer-widget-heading">About Us</h2> <p class="about">Our website offers complete guidance on all askMID portal related services which cover checking askMID Insurance Check, Personal Check Insurance, Third Party Insurance, Login, Register and more other related services.</p> <div class="contact"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" stroke="white" fill="none" stroke-width="1.5"></rect><path d="M2 4 L12 12 L22 4" stroke="white" fill="none" stroke-width="1.5"></path><path d="M2 20 L9 13" stroke="white" fill="none" stroke-width="1.5"></path><path d="M22 20 L15 13" stroke="white" fill="none" stroke-width="1.5"></path></svg> <a href="mailto:contactmu97@gmail.com" aria-label="Send email to contactmu97@gmail.com" rel="nofollow">contactmu97@gmail.com </a> </div> </section> <nav class="site-links" aria-labelledby="site-links-heading"> <h2 id="site-links-heading" class="footer-widget-heading">Site Links</h2> <ul> <li><a href="/" aria-label="View Privacy Policy page">Home</a></li><li><a href="/" aria-label="View Privacy Policy page">About</a></li><li><a href="/disclaimer/" aria-label="View Disclaimer page">Disclaimer</a></li><li><a href="/privacy-policy/" aria-label="View Privacy Policy page">Privacy Policy</a></li> </ul> </nav> <nav class="site-links" aria-labelledby="top-links-heading"> <h2 id="top-links-heading" class="footer-widget-heading">Top Links</h2> <ul> <li><a href="/check-insurance" aria-label="Check Insurance">Check Insurance</a></li><li><a href="/askMID-login/" aria-label="askMID Login">askMID Login</a></li><li><a href="/askMID-register" aria-label="askMID Register">askMID Register</a></li> </ul> </nav> </div> </div> <section class="copyright" aria-labelledby="disclaimer-heading"> <h2 id="disclaimer-heading" class="visually-hidden">Disclaimer</h2> <p><strong>Disclaimer: </strong><span>This website is an independent information resource and is not affiliated, endorsed, or connected with Motor Insurers’ Bureau (MIB) or AskMID. We do not provide official insurance data. For official checks, visit the UK government-approved services. For official information and services, please visit the official askMID website at https://www.askmid.com.</span></p> </section> </footer>
+<footer class="footer-outer" role="contentinfo"> <div class="footer-inner"> <div class="footer-widget"> <section class="about-us" aria-labelledby="about-us-heading"> <h2 id="about-us-heading" class="footer-widget-heading">About Us</h2> <p class="about">Our website offers complete guidance on all askMID portal related services which cover checking askMID Insurance Check, Personal Check Insurance, Third Party Insurance, Login, Register and more other related services.</p> <div class="contact"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" stroke="white" fill="none" stroke-width="1.5"></rect><path d="M2 4 L12 12 L22 4" stroke="white" fill="none" stroke-width="1.5"></path><path d="M2 20 L9 13" stroke="white" fill="none" stroke-width="1.5"></path><path d="M22 20 L15 13" stroke="white" fill="none" stroke-width="1.5"></path></svg> <a href="mailto:contactmu97@gmail.com" aria-label="Send email to contactmu97@gmail.com" rel="nofollow">contactmu97@gmail.com </a> </div> </section> <nav class="site-links" aria-labelledby="site-links-heading"> <h2 id="site-links-heading" class="footer-widget-heading">Site Links</h2> <ul> <li><a href="/" aria-label="View Privacy Policy page">Home</a></li><li><a href="/about-us" aria-label="View Privacy Policy page">About</a></li><li><a href="/disclaimer/" aria-label="View Disclaimer page">Disclaimer</a></li><li><a href="/privacy-policy/" aria-label="View Privacy Policy page">Privacy Policy</a></li> </ul> </nav> <nav class="site-links" aria-labelledby="top-links-heading"> <h2 id="top-links-heading" class="footer-widget-heading">Top Links</h2> <ul> <li><a href="/check-insurance" aria-label="Check Insurance">Check Insurance</a></li><li><a href="/askMID-login/" aria-label="askMID Login">askMID Login</a></li><li><a href="/askMID-register" aria-label="askMID Register">askMID Register</a></li> </ul> </nav> </div> </div> <section class="copyright" aria-labelledby="disclaimer-heading"> <h2 id="disclaimer-heading" class="visually-hidden">Disclaimer</h2> <p><strong>Disclaimer: </strong><span>This website is an independent information resource and is not affiliated, endorsed, or connected with Motor Insurers’ Bureau (MIB) or AskMID. We do not provide official insurance data. For official checks, visit the UK government-approved services. For official information and services, please visit the official askMID website at https://www.askmid.com.</span></p> </section> </footer>
 	
-	</body>
-	</html>
+</body>
+</html>
