@@ -249,14 +249,17 @@
     <body class="askMID"> 
 
 <!-- Free Tool Angle -->
-<div id="newFeatureBar" style="display:flex; align-items:center; justify-content:space-between; background:linear-gradient(90deg, #1a5c35, #2d7a4f, #1a5c35); background-size:200% 100%; animation:slideGradient 4s linear infinite; padding:10px 20px; font-family:'ABeeZee',Verdana,sans-serif; font-weight:700; font-size:14px; color:#ffffff; position:relative; z-index:99998; box-shadow:0 2px 8px rgba(0,0,0,0.3); border-bottom:2px solid #145228;">
-  <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
-    <span style="background:#ffcc00; color:#1a1a1a; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:900; letter-spacing:1px; animation:pulse 1.5s ease-in-out infinite;">FREE</span>
-    <span>✍️ The UK's favourite handwriting practice tool — <a href="https://www.handwritingrepeater.org/" style="color:#ffcc00; text-decoration:underline; font-weight:900;">Handwriting Repeater</a> — no sign-up needed!</span>
+		
+
+<div id="newFeatureBar" style="display:flex; align-items:center; justify-content:center; background:linear-gradient(90deg, #1a5c35, #2d7a4f, #1a5c35); background-size:200% 100%; animation:slideGradient 4s linear infinite; padding:10px 40px 10px 20px; font-family:'ABeeZee',Verdana,sans-serif; font-weight:700; font-size:14px; color:#ffffff; position:relative; z-index:99998; box-shadow:0 2px 8px rgba(0,0,0,0.3); border-bottom:2px solid #145228; text-align:center;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap;">
+    <span style="background:#ff3300; color:white; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:900; letter-spacing:1px; animation:pulse 1.5s ease-in-out infinite;">NEW</span>
+    <span>✍️ The UK's favourite handwriting practice tool <a href="https://www.handwritingrepeater.org/" style="color:#ffcc00; text-decoration:underline; font-weight:900;">Handwriting Repeater</a> helps your child handwriting practise at home, free!</span>
     <a href="https://www.handwritingrepeater.org/" style="background:#ffcc00; color:#1a1a1a; padding:5px 16px; border-radius:20px; font-size:12px; font-weight:900; text-decoration:none; white-space:nowrap; letter-spacing:0.5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">Try Now →</a>
   </div>
-  <button onclick="document.getElementById('newFeatureBar').style.display='none'; localStorage.setItem('hrNotifDismissed','1');" style="background:rgba(255,255,255,0.15); border:none; color:#fff; font-size:20px; cursor:pointer; padding:2px 10px; border-radius:50%; font-weight:900; flex-shrink:0; line-height:1; margin-left:12px;" title="Dismiss">✕</button>
+  <button onclick="document.getElementById('newFeatureBar').style.display='none'; localStorage.setItem('hrNotifDismissed','1');" style="background:rgba(255,255,255,0.15); border:none; color:#fff; font-size:20px; cursor:pointer; padding:2px 10px; border-radius:50%; font-weight:900; flex-shrink:0; line-height:1; position:absolute; right:12px; top:50%; transform:translateY(-50%);" title="Dismiss">✕</button>
 </div>
+
 
 <!-- Shared Styles & Script -->
 <style>
@@ -273,9 +276,8 @@
     transition: opacity 0.2s ease;
   }
   @media (max-width: 640px) {
-    #newFeatureBar { flex-direction: column; gap: 8px; text-align: center; padding: 12px 16px; }
-    #newFeatureBar > div { justify-content: center; }
-    #newFeatureBar button { position: absolute; top: 8px; right: 10px; }
+    #newFeatureBar { padding: 12px 40px 12px 16px; }
+    #newFeatureBar > div { gap: 8px; }
   }
 </style>
 <script>
