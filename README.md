@@ -82,3 +82,5 @@ This website is an **independent informational project** created for educational
 ---
 
 ⭐ If you find this project helpful, feel free to support it or share feedback for future improvements.
+
+also check [Handwriting Repeater](https://www.handwritingrepeater.org)
